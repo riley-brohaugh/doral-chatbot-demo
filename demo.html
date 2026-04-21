@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Doral - Chatbot Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow: auto;
+            background-color: #f0f0f0;
+        }
+
+        .background-container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('doral-background.png');
+            background-size: contain;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+        }
+
+        .demo-banner {
+            background: rgba(0, 100, 200, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .demo-banner strong {
+            font-weight: bold;
+        }
+
+        /* Ensure chatbot appears on top of everything */
+        #chatbot-container {
+            position: relative;
+            z-index: 10000;
+        }
+    </style>
+
+    <!-- Chatbot Embed Code -->
+    <script type="text/javascript">
+        window.socrataChatDomain = 'https://doralflorida-web.chatbot.socrata.com';
+    </script>
+    <link rel="stylesheet" href="https://doralflorida-web.chatbot.socrata.com/embed/embed.css">
+</head>
+<body>
+    <div class="demo-banner">
+        <strong>🤖 Chatbot Demo Mode</strong> - This is a demonstration page with the City of Doral Resident Assistant chatbot embedded
+    </div>
+
+    <div class="background-container">
+        <!-- The background image fills this container -->
+        <!-- Chatbot will appear as a floating widget, typically in the bottom-right corner -->
+    </div>
+
+    <div id="chatbot-container"></div>
+
+    <!-- Load chatbot script at the end -->
+    <script defer src="https://doralflorida-web.chatbot.socrata.com/embed/embed.js"></script>
+</body>
+</html>

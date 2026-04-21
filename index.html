@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City of Doral - Chatbot Demo</title>
     <style>
-        * {
+        /* Only reset our page elements, not the chatbot */
+        body, .demo-banner, .background-container {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -43,10 +44,11 @@
             font-weight: bold;
         }
 
-        /* Ensure chatbot appears on top of everything */
-        #chatbot-container {
-            position: relative;
-            z-index: 10000;
+        /* Ensure chatbot appears on top and preserves its internal formatting */
+        #chatbot-container,
+        #chatbot-container * {
+            /* Don't apply any resets to the chatbot */
+            all: revert;
         }
     </style>
 

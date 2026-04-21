@@ -1,0 +1,339 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    background: linear-gradient(135deg, #1e5ba8 0%, #2471c7 100%);
+    color: white;
+    padding: 15px 0;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-placeholder {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #e0e9f5;
+    margin-top: 5px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.translate-btn {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.translate-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.search-box {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Navigation */
+.main-nav {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #2471c7;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e5ba8 0%, #2471c7 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    color: #e0e9f5;
+}
+
+/* Quick Links */
+.quick-links {
+    background: white;
+    padding: 40px 20px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+.quick-links .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.quick-link-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.quick-link-card h3 {
+    color: #1e5ba8;
+    margin-bottom: 10px;
+}
+
+.quick-link-card p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2471c7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1e5ba8;
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 20px;
+}
+
+.content-section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    color: #1e5ba8;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-item {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #2471c7;
+}
+
+.service-item h4 {
+    color: #1e5ba8;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* FAQ Section */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #2471c7;
+}
+
+.faq-item h4 {
+    color: #1e5ba8;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #666;
+}
+
+/* Footer */
+.site-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #bdc3c7;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 8px 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #bdc3c7;
+}
+
+/* Chatbot Container */
+#chatbot-container {
+    /* Your chatbot will position itself here */
+    /* Typically chatbots are fixed position in bottom-right corner */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-top .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
